@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "helvetica";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+}
+
+.back {
+  width: 100%;
+  height: 100vh;
+}
+.back img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.top {
+  pointer-events: none; /* Its desable the select and  clickable  of top section */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+#workingArea {
+  margin: 0 auto;
+  height: 100vh;
+  width: 80%;
+  max-width: 1920px;
+  position: relative;
+}
+#nav {
+  pointer-events: all;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#nleft img {
+  height: 60px;
+}
+#nleft,
+#nright {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  color: white;
+  text-decoration: none;
+}
+#nleft a,
+#nright a {
+  color: white;
+  text-decoration: none;
+  font-family: "gilroy";
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+#hero {
+  display: flex;
+  justify-content: space-between;
+  top: 55%;
+  left: 0;
+  transform: translate(0%, -50%);
+  width: 100%;
+  position: absolute;
+}
+#hleft {
+  min-width: 50%;
+}
+
+#hleft #elem {
+  height: 7vw;
+  position: relative;
+  overflow: hidden;
+}
+#hleft #elem h1:nth-child(1) {
+  top: 0;
+}
+#hleft #elem h1 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-family: "Kajiro";
+  font-weight: 100;
+  font-size: 8vw;
+  color: white;
+  line-height: 0.9;
+  letter-spacing: 1px;
+}
+#hleft button {
+  font-family: "Kajiro";
+  padding: 0.3vw 2vw;
+  font-size: 3vw;
+  margin-top: 2vh;
+  letter-spacing: 2px;
+  pointer-events: all; /* for clickable */
+  cursor: pointer;
+}
+#hright {
+  width: 17%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#hright p {
+  text-align: right;
+  font-size: 10px;
+}
+#hright #imgdiv {
+  width: 100%;
+  height: 120px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: url(https://media.ray-ban.com/cms/resource/image/985104/landscape_ratio64x33/1292/667/af5016dda42543afb7caabe9de719727/5A057D36324DE74EAE7C36309517B291/rb-hp-gender-tiles-icons-man-d-1-.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#hright p:nth-child(3) {
+  margin-bottom: 25px;
+}
